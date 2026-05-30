@@ -94,7 +94,7 @@ export default function Home() {
         <div className="top">
           <input placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} />
           <select value={theme} onChange={(e) => setTheme(e.target.value)}>
-            <option value="light">☀ Light</option>
+            <option value="light">☀️ Light</option>
             <option value="dark">🌙 Dark</option>
             <option value="eye">🌿 Eye</option>
           </select>
