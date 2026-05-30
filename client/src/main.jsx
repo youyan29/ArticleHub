@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import api from "./api";
 
-api.defaults.baseURL = "http://localhost:5000";
+api.defaults.baseURL = "https://articlehub-3lbw.onrender.com";
 
 api.defaults.headers.common["Authorization"] = `Bearer ${localStorage.getItem("token")}`;
 

@@ -727,7 +727,7 @@ app.post("/upload", upload.single("image"), (req, res) => {
       });
     }
 
-    const url = `http://localhost:5000/uploads/${req.file.filename}`;
+    const url = `${req.protocol}://${req.get("host")}/uploads/${req.file.filename}`;
 
     res.json({ url });
   } catch (err) {

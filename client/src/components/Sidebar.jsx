@@ -25,7 +25,7 @@ function Sidebar({
       return;
     }
 
-    await api.post("http://localhost:5000/chapter", {
+    await api.post("/chapter", {
       articleId,
       title,
     });
@@ -43,7 +43,7 @@ function Sidebar({
       return;
     }
 
-    await api.put(`http://localhost:5000/chapter/${id}`, {
+    await api.put(`/chapter/${id}`, {
       title: t,
     });
 

@@ -2,7 +2,7 @@ import api from "../api";
 
 function History({ history, onRestore }) {
   const restore = async (v) => {
-    await api.post(`http://localhost:5000/restore/${v._id}`);
+    await api.post(`/restore/${v._id}`);
     onRestore?.();
   };
 
@@ -10,7 +10,7 @@ function History({ history, onRestore }) {
     const t = prompt("edit", v.message);
     if (!t?.trim()) return;
 
-    await api.put(`http://localhost:5000/history/${v._id}`, {
+    await api.put(`/history/${v._id}`, {
       message: t.trim(),
     });
 
