@@ -101,7 +101,7 @@ export default function EditorPage() {
           <button onClick={() => setShowSidebar(!showSidebar)}>☰</button>
           <button onClick={() => setShowHistory(!showHistory)}>🕘</button>
           <select value={theme} onChange={(e) => setTheme(e.target.value)}>
-            <option value="light">☀ Light</option>
+            <option value="light">☀️ Light</option>
             <option value="dark">🌙 Dark</option>
             <option value="eye">🌿 Eye</option>
           </select>
